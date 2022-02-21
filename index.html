@@ -283,7 +283,11 @@
             </div>
           </div>
           <div class="contact__right">
-            <form class="contact__form" action="http://localhost:8000/mail_portfolio" method="post">
+            <!-- for development -->
+            <!-- <form class="contact__form" action="http://localhost:8000/mail_portfolio" method="post"> -->
+             
+              <!-- for production -->
+              <form class="contact__form" action="https://cwkay.herokuapp.com/mail_portfolio" method="post">
               <div class="contact__fields">
                 <label for="name">Name</label>
                 <input
@@ -307,7 +311,7 @@
                 <textarea
                   name="client_message"
                   id="message"
-                  placeholder="Write Message..."
+                  placeholder="Write a Message..."
                 ></textarea>
               </div>
               <div class="contact__fields">
